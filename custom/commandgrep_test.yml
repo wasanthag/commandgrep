@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: Test commandgrep module works
+      commandgrep:
+        command: "df"
+        matchstring: "nv"
+      register: result
+
+    - name: Print out put
+      debug: var=result
