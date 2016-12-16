@@ -24,7 +24,7 @@ import re
 def process_command_filter(comm, filt):
     print "process_command()"
     results = []
-    raw_op=subprocess.check_output([comm])
+    raw_op=subprocess.check_output(comm, shell=True)
     op_in_list=raw_op.split('\n')
     for line in op_in_list:
 	#print line
