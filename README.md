@@ -3,6 +3,7 @@ custom ansible module to run a linux shell command and filter output based on an
 
 Examples:
 
+```
 wasantha@wasantha-ThinkPad-P50 ~/ansible-test/custom/library $ ansible-playbook ../commandgrep_test.yml
  [WARNING]: provided hosts list is empty, only localhost is available
 
@@ -40,7 +41,7 @@ ok: [localhost] => {
 PLAY RECAP *********************************************************************
 localhost                  : ok=3    changed=0    unreachable=0    failed=0   
 
-```
+
 
 wasantha@wasantha-ThinkPad-P50 ~/ansible-test/custom $ ansible-playbook commandgrep_test.yml 
  [WARNING]: provided hosts list is empty, only localhost is available
